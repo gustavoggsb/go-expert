@@ -80,6 +80,22 @@ Este projeto tem como objetivo aplicar conceitos de webserver HTTP, contextos, b
 - Caso ocorram erros relacionados a timeouts, eles serão registrados nos logs.
 - Certifique-se de que o servidor esteja em execução antes de rodar o cliente, caso contrário, o `client.go` não conseguirá fazer a requisição.
 
+### Estrutura do Projeto
+
+```txt
+client-server-api/                # Diretório raiz do projeto
+├── client/                       # Diretório do cliente
+│   ├── cotacao.txt               # Arquivo de saída com a cotação (gerado pelo cliente)
+│   └── main.go                   # Código fonte do cliente
+├── server/                       # Diretório do servidor
+│   ├── cotacoes.db               # Banco de dados SQLite para armazenar as cotações (gerado pelo servidor)
+│   └── main.go                   # Código fonte do servidor
+├── .gitignore                    # Arquivo para ignorar arquivos desnecessários no git
+├── go.mod                        # Arquivo de definição de módulos Go
+├── go.sum                        # Arquivo de checagem de dependências do Go
+└── README.md                     # Instruções e documentação do projeto
+```
+
 ## Contato
 
 Se você tiver dúvidas ou sugestões sobre este projeto, sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*. 
